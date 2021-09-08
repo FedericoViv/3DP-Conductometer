@@ -1,7 +1,7 @@
 # 3DP-Conductometer
 PSOC project for 3DP conductometer
 
-This repository contains the PSOC project for the circuitry of a conductometer to be used with 3DP electrodes and cell. The source code is released under GPLv3. I don't own any rights on the code regarding the OLED display. All credits for the OLED code go to ADAFRUIT and Derk Steggewentz for his adaptation of ADAFRUIT code for PSOC creator.
+This repository contains the PSOC project for the circuitry of a conductometer to be used with 3DP electrodes and cell. The main source code is released under GPLv3. I don't own any rights on the code regarding the OLED display. All credits for the OLED code go to ADAFRUIT and Derk Steggewentz for his adaptation of ADAFRUIT code for PSOC creator.
 
 The following text will summarize how to build and test the circuitry for the 3DP conductometer.
 Material needed:
