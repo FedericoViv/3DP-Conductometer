@@ -20,7 +20,7 @@ Material needed:
 
 Figure 1 shows the circuit diagram of the conductometer.
 
-
+![Immagine1](https://user-images.githubusercontent.com/39185430/132537490-3c7dca1e-6751-4a16-aa6b-8e11e57e01c1.png)
 Figure 1. Conductometer circuit diagram.
 
 Before undergoing any soldering procedure, I suggest using a breadboard in order to be sure about your connections. Each pin on the psoc 5lp prototyping kit has an assigned number, please be sure you followed the connections showed in figure 1. Figure 2 shows the connection on a breadboard.
