@@ -21,9 +21,12 @@ Material needed:
 Figure 1 shows the circuit diagram of the conductometer.
 
 ![Immagine1](https://user-images.githubusercontent.com/39185430/132537490-3c7dca1e-6751-4a16-aa6b-8e11e57e01c1.png)
+
 Figure 1. Conductometer circuit diagram.
 
 Before undergoing any soldering procedure, I suggest using a breadboard in order to be sure about your connections. Each pin on the psoc 5lp prototyping kit has an assigned number, please be sure you followed the connections showed in figure 1. Figure 2 shows the connection on a breadboard.
+
+![Immagine2](https://user-images.githubusercontent.com/39185430/132537674-6bd41a7c-cdf2-4aa1-8987-0a9c3cc07cc2.jpg)
 
 Figure 2. Example connections on a breadboard.
 
@@ -41,18 +44,27 @@ NOTE 1. Do not use the mini usb port, the firmware has been programmed to use on
 
 Open the psoc programmer and check if the programmer firmware is updated, you can find the update button in the utilities tab (figure 3).
 
+![Immagine3](https://user-images.githubusercontent.com/39185430/132537684-59f74051-de5e-400e-b9b2-0bc6195dd5c2.png)
+
 Figure 3. Update your programmer firmware.
 
 After updating your programmer, you can program your psoc by loading the HEX file containing the conductometer pinout and firmware (figure 4).
+
+![Immagine4](https://user-images.githubusercontent.com/39185430/132537698-1e6f6f9f-b1ad-43b3-8708-438ccf43f681.png)
 
 Figure 4. Load and program your board. Be sure everything is green in the corner.
 
 Open your terminal and select the serial port of your board (figure 5).
 
+![Immagine5](https://user-images.githubusercontent.com/39185430/132537704-72549bba-43d8-410b-9737-90eb7a94296e.png)
+
 Figure 5. Teraterm serial connection.
 
 At this point you may see random sign popping up on your terminal, this is caused by the fact that the UART communication used on the board to connect the conductometer to the computer is using a communication speed of 115200 baud. You can modify this by following SETUP -> SERIAL PORT -> and modify speed (figure 6).
 NOTE 2. Be sure you have closed psoc programmer, or it will keep busy the serial port!
+
+![Immagine6](https://user-images.githubusercontent.com/39185430/132537716-b2d4d50a-2362-4ac1-8d2d-dfb7c34f3317.png)
+
 Figure 6. Serial setup speed must be set to 115200 baud.
 
 If you have done everything correctly, your terminal emulator should start showing the value of the resistance of whatever is place between the alligator clips.
