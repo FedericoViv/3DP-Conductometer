@@ -15,6 +15,7 @@ Material needed:
 -	breadboard (optional, but it is convenient to see if you have assembled everything correctly before soldering)
 -	soldering iron
 -	computer with windows as OS
+-	(Optional) I2C Oled display (128 x 32)
 
 1.	Electronics setup
 
@@ -24,7 +25,7 @@ Figure 1 shows the circuit diagram of the conductometer.
 
 Figure 1. Conductometer circuit diagram.
 
-Before undergoing any soldering procedure, I suggest using a breadboard in order to be sure about your connections. Each pin on the psoc 5lp prototyping kit has an assigned number, please be sure you followed the connections showed in figure 1. Figure 2 shows the connection on a breadboard.
+Before undergoing any soldering procedure, I suggest using a breadboard in order to be sure about your connections. Each pin on the psoc 5lp prototyping kit has an assigned number, please be sure you followed the connections showed in figure 1. If you are using the oled display, you should connect it to the SCL (12[0]), SDA (12[1]), VDD and GND pins.  Figure 2 shows the connection on a breadboard.
 
 ![Immagine2](https://user-images.githubusercontent.com/39185430/132537674-6bd41a7c-cdf2-4aa1-8987-0a9c3cc07cc2.jpg)
 
@@ -70,7 +71,7 @@ Figure 6. Serial setup speed must be set to 115200 baud.
 
 If you have done everything correctly, your terminal emulator should start showing the value of the resistance of whatever is place between the alligator clips.
 
-TROUBLESHOOTING 1. Since this firmware is designed to be used also with an OLED display, it may happen that the starting routine get stuck, and no digits appear on the terminal. If this happens, press the reset button on the programmer (NOT THE BOARD). See figure 2 for its location.
+TROUBLESHOOTING 1. Since this firmware is designed to be used also with an OLED display, it may happen that the starting routine get stuck, and no digits appear on the terminal. If this happens, press the reset button on the programmer (NOT THE BOARD). See figure 2 for its location. This troubleshooting is valid both for OLED and terminal problem.
 
 If everything went smooth so far, you should calibrate your device. Take resistors with values going from 10ohm to 100k (even 1M should be fine) and save the value popping on the terminal.
 
