@@ -15,7 +15,7 @@ Material needed:
 -	breadboard (optional, but it is convenient to see if you have assembled everything correctly before soldering)
 -	soldering iron
 -	computer with windows as OS
--	(Optional) I2C Oled display (128 x 32)
+-	(Optional) I2C OLED ssd1306 display (128 x 32)
 
 1.	Electronics setup
 
